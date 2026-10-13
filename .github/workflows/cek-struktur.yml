@@ -399,12 +399,12 @@ jobs:
             ERROR=1
           fi
 
-          # 2. Cek Import Gambar (dari baris 3 & 4 di instruksi)
+          #  2. Cek Import Gambar (dari baris 3 & 4 di instruksi)
           # Mencari teks import yang mengandung bgGambar dan header-bg.png
-          if ! grep -Eq "import.*bgGambar.*header-bg\.png" "$FILE"; then
-            echo "❌ GAGAL: Anda belum melakukan import gambar header-bg.png dengan nama bgGambar."
-            ERROR=1
-          fi
+            if ! grep -Eq "import.*bgGambar.*header-bg.png" "$FILE"; then
+              echo "❌ GAGAL: Anda belum melakukan import gambar header-bg.png dengan nama bgGambar."
+              ERROR=1
+            fi
 
           # 3. Cek Elemen header dan className 'header-area'
           if ! grep -q "className=[\"']header-area[\"']" "$FILE"; then
