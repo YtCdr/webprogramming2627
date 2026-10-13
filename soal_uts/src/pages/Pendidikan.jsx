@@ -15,6 +15,6 @@ function Pendidikan() {
       </ul>
     </div>
 }
-
+export default Pendidikan;
 // lakukan commit "selesai TODO 14" dan push 
 

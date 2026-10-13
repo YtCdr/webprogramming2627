@@ -4,7 +4,7 @@
 function Beranda() {
   return (
     <div>
-      <h2> style={{ marginTop: 0 }}Halaman Beranda</h2>
+      <h2 style={{ marginTop: "20px" }}>Halaman Beranda</h2>
         <p>
         <strong>Jurusan Informatika</strong> dan <strong>Ilmu Komputer</strong> di <em>Era Digital Sekarang</em>.
         </p>
@@ -16,25 +16,4 @@ function Beranda() {
   );
 }
 
-function App() {
-  return (
-    
-    <div className="container">
-      {/* TODO 3 Header */}
-      <div className="main-wrapper">
-        <main className="content-area">
-          {/* TODO 6 Routes 
-          <Routes>
-            <Route path="/" element={<Beranda />} />
-          </Routes>
-          */}
-        </main>
-         {/* TODO 4 SideBar */}
-      </div>
-      {/* TODO 5 Footer */}
-      
-    </div>
-  );
-}
-
-export default App;
+export default Beranda;

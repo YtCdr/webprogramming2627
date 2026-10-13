@@ -1,16 +1,16 @@
-//import './assets/style.css';
-//import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header';      // sesuaikan path
-import SideBar from './components/SideBar';
-import Footer from './components/Footer';
-import Beranda from './pages/Beranda';
-import Profil from './pages/Profil';
-import LainLainnya from './pages/LainLainnya';
-import Mahasiswa from './pages/Mahasiswa';
-import Pendidikan from './pages/Pendidikan';
-import Riset from './pages/Riset';
-import Berita from './pages/Berita';
-
+import './assets/style.css';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/layout/Header.jsx';      // sesuaikan path
+import SideBar from './components/layout/SideBar.jsx';
+import Footer from './components/layout/Footer.jsx';
+import Beranda from './pages/Beranda.jsx';
+import Profil from './pages/Profil.jsx';
+import LainLain from './pages/LainLain.jsx';
+import Mahasiswa from './pages/Mahasiswa.jsx';
+import Pendidikan from './pages/Pendidikan.jsx';
+import Riset from './pages/Riset.jsx';
+import Berita from './pages/Berita.jsx';
+import NotFound from './pages/NotFound.jsx';
 // TODO 1  Import Komponen Layout (Header, SideBar, Footer)
 
 // lakukan commit "selesai TODO 1" dan push 
@@ -23,25 +23,24 @@ function App() {
   return (
     
     <div className="container">
-      {<Header />}
+      <Header />
       <div className="main-wrapper">
         <main className="content-area">
-          {
           <Routes>
             <Route path="/" element={<Beranda />} />
             <Route path="/profil" element={<Profil />} />
-            <Route path="/lain-lainnya" element={<LainLainnya />} />
+            <Route path="/lain-lainnya" element={<LainLain />} />
             <Route path="/mahasiswa" element={<Mahasiswa />} />
             <Route path="/pendidikan" element={<Pendidikan />} />
             <Route path="/riset" element={<Riset />} />
             <Route path="/berita" element={<Berita />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
-          }
+          
         </main>
-         {<SideBar />}
+         <SideBar />
       </div>
-      {<Footer />}
+      <Footer />
       
     </div>
   );

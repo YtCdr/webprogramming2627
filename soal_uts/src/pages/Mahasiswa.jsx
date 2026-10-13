@@ -14,4 +14,5 @@ function Mahasiswa() {
       </p>
     </div>
 }
+export default Mahasiswa;
 // lakukan commit  "selesai TODO 13" dan push 
