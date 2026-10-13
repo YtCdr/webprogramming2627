@@ -7,7 +7,7 @@ import headerGambar from "../../assets/header-bg.png";
 export default function Header() {
     return (
         <header style={{ 
-            backgroundImage: `url(${headerGambar})`, 
+            backgroundImage: `url(${bgGambar})`, 
             backgroundSize:'cover', 
             backgroundPosition:'center', 
             backgroundRepeat:'no-repeat' }} className="header-area">
