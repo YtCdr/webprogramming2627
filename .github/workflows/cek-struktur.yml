@@ -394,7 +394,8 @@ jobs:
           FILE="src/components/layout/Header.jsx"
 
           # 1. Cek Import NavLink (dari baris 2 di instruksi)
-          if ! grep -Eq "^\s*import\s*\{\s*NavLink\s*\}\s*from\s*['\"]react-router-dom['\"]" "$FILE"; then
+          if ! grep -Eq "import.*bgGambar.*header-bg\.png" "$FILE"; then
+
             echo "❌ GAGAL: Anda belum mengaktifkan import NavLink dari react-router-dom."
             ERROR=1
           fi
