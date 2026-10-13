@@ -3,7 +3,7 @@
 export default function Riset() {
   return (
     <div>
-      <h2 style={{ marginTop: 0 }}>Fokus Riset</h2>
+      <h2 style={{ marginTop: "20px" }}>Fokus Riset</h2>
       <p>
         Dosen dan mahasiswa kami aktif melakukan berbagai penelitian inovatif di bidang teknologi informasi guna memberikan solusi nyata bagi permasalahan di masyarakat dan industri.
       </p>

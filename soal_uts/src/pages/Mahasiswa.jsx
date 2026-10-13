@@ -2,7 +2,7 @@
 // Buat component  function dengan nama Mahasiswa
 export default function Mahasiswa() {
  <div>
-      <h2 style={{ marginTop: 0 }}>Kegiatan Mahasiswa</h2>
+      <h2 style={{ marginTop: "20px" }}>Kegiatan Mahasiswa</h2>
       <p>
         Kehidupan kampus di Prodi Informatika sangat dinamis. Selain kegiatan akademik, 
         mahasiswa juga aktif dalam Himpunan Mahasiswa (HIMA), 
