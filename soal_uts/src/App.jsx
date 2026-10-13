@@ -9,6 +9,7 @@ import LainLainnya from './pages/LainLainnya';
 import Mahasiswa from './pages/Mahasiswa';
 import Pendidikan from './pages/Pendidikan';
 import Riset from './pages/Riset';
+import Berita from './pages/Berita';
 
 // TODO 1  Import Komponen Layout (Header, SideBar, Footer)
 
@@ -33,6 +34,8 @@ function App() {
             <Route path="/mahasiswa" element={<Mahasiswa />} />
             <Route path="/pendidikan" element={<Pendidikan />} />
             <Route path="/riset" element={<Riset />} />
+            <Route path="/berita" element={<Berita />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
           }
         </main>
