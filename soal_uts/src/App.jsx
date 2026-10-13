@@ -1,6 +1,8 @@
 //import './assets/style.css';
 //import { Routes, Route } from 'react-router-dom';
-
+import Header from './components/Header';      // sesuaikan path
+import SideBar from './components/SideBar';
+import Footer from './components/Footer';
 // TODO 1  Import Komponen Layout (Header, SideBar, Footer)
 
 // lakukan commit "selesai TODO 1" dan push 
