@@ -1,6 +1,6 @@
 // TODO 9
 import { NavLink } from 'react-router-dom'; 
-import headerGambar from "../../assets/header-bg.png";
+import bgGambar from "../../assets/header-bg.png";
 // 2. Import gambar dari folder assets: header-bg.png beri nama bgGambar
 // 3. Buat component function dengan nama Header
 // 4. Struktur wajib di dalam return:
