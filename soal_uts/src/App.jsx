@@ -19,7 +19,7 @@ import NotFound from './pages/NotFound.jsx';
 
 // lakukan commit "selesai TODO 2" dan push 
 
-function App() {
+export default function App() {
   return (
     
     <div className="container">
@@ -46,6 +46,5 @@ function App() {
   );
 }
 
-export default App;
 
 // TODO 7 lakukan commit dengan nama "selesai TODO 7" dan push 

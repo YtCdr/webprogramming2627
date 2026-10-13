@@ -1,6 +1,6 @@
 // TODO 10
 // 1. Buat component function dengan nama Footer
-function Footer() {
+export default function Footer() {
     return (
 <footer className="footer-area">
             // 3. Isi tag footer tersebut dengan teks persis seperti di bawah ini:
@@ -9,4 +9,3 @@ function Footer() {
         </footer>
     );
 }
-export default Footer;

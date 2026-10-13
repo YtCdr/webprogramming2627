@@ -8,5 +8,3 @@ const Berita = () => {
     </div>
   );
 };
-
-export default Berita;

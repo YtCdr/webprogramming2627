@@ -4,7 +4,7 @@ import headerGambar from "../../assets/header-bg.png";
 // 2. Import gambar dari folder assets: header-bg.png beri nama bgGambar
 // 3. Buat component function dengan nama Header
 // 4. Struktur wajib di dalam return:
-function Header() {
+export default function Header() {
     return (
         <header style={{ 
             backgroundImage: `url(${headerGambar})`, 
@@ -27,5 +27,4 @@ function Header() {
         </header>
     );
 }
-export default Header;
 // 5. lakukan push dan commit "selesai TODO 9" dengan todo 9
