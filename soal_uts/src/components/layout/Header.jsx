@@ -6,7 +6,7 @@ import logo from '../assets/logo.png';
 // 4. Struktur wajib di dalam return:
 function Header() {
     return (
-        <header> className="header-area">
+        <header> className="header-area"
             <div className="header-text">
                 <h1>ProdiInformatika</h1>
                 <p>Universitas Matana.</p>

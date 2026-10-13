@@ -11,5 +11,7 @@ function LainLain() {
         Untuk informasi lebih lanjut, silakan hubungi bagian tata usaha program studi.
       </p>
     </div>
-
+  );
+}
+export default LainLain;
 // 3. lakukan commit dan push 
