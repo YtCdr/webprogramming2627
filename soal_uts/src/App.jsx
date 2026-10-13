@@ -3,6 +3,13 @@
 import Header from './components/Header';      // sesuaikan path
 import SideBar from './components/SideBar';
 import Footer from './components/Footer';
+import Beranda from './pages/Beranda';
+import Profil from './pages/Profil';
+import LainLainnya from './pages/LainLainnya';
+import Mahasiswa from './pages/Mahasiswa';
+import Pendidikan from './pages/Pendidikan';
+import Riset from './pages/Riset';
+
 // TODO 1  Import Komponen Layout (Header, SideBar, Footer)
 
 // lakukan commit "selesai TODO 1" dan push 
@@ -15,7 +22,7 @@ function App() {
   return (
     
     <div className="container">
-      {/* TODO 3 Header */}
+      {<Header />}
       <div className="main-wrapper">
         <main className="content-area">
           {/* TODO 6 Routes 
@@ -24,9 +31,9 @@ function App() {
           </Routes>
           */}
         </main>
-         {/* TODO 4 SideBar */}
+         {<SideBar />}
       </div>
-      {/* TODO 5 Footer */}
+      {<Footer />}
       
     </div>
   );
