@@ -11,6 +11,7 @@ import Pendidikan from './pages/Pendidikan.jsx';
 import Riset from './pages/Riset.jsx';
 import Berita from './pages/Berita.jsx';
 import NotFound from './pages/NotFound.jsx';
+import Array from "./pages/Array";
 // TODO 1  Import Komponen Layout (Header, SideBar, Footer)
 
 // lakukan commit "selesai TODO 1" dan push 
@@ -35,6 +36,7 @@ export default function App() {
             <Route path="/riset" element={<Riset />} />
             <Route path="/berita" element={<Berita />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/array" element={<Array />} />
           </Routes>
           
         </main>
