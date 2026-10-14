@@ -12,6 +12,7 @@ export default function Beranda() {
         <p>
         Jurusan Informatika dan Ilmu Komputer di era digital sekarang memiliki peran yang sangat penting dalam mengembangkan teknologi informasi, kecerdasan buatan, keamanan siber, dan inovasi digital.
          Dengan fokus pada penelitian, pengembangan perangkat lunak, dan penerapan teknologi terkini, jurusan ini mempersiapkan mahasiswa untuk menjadi profesional yang kompeten dan kreatif dalam menghadapi tantangan dunia digital yang terus berkembang.
+         Teknik Informatika Merupakan Salah Satu Jurusan Pendidikan Tingkat Perguruan Tinggi.
         </p>
     </div>
   );
