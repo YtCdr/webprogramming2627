@@ -23,6 +23,7 @@ export default function Header() {
                 <NavLink to="/riset">Riset</NavLink>
                 <NavLink to="/berita">Berita</NavLink>
                 <NavLink to="/lain-lainnya">Lain-Lainnya</NavLink>
+                <NavLink to="/array">Array</NavLink>
             </nav>
         </header>
     );
