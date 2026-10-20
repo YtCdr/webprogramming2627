@@ -15,12 +15,9 @@ function LayoutGrid() {
         {/* Mengambil 4 dari 12 kolom sisanya */}
         <Col md={4}>
           <div className="p-3 bg-light border rounded">
-            Ringkasan Saldo
-          </div>
+            Ringkasan Saldo</div>
         </Col>
       </Row>
     </Container>
   );
 }
-
-export default LayoutGrid;
