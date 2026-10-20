@@ -16,8 +16,8 @@ export default function WalletSummary() {
           </Card.Subtitle>
           <Card.Text>
             Total Pengeluaran: <strong>Rp 1.250.000</strong>
-            <Button variant="primary">Tambah Transaksi</Button>
           </Card.Text>
+          <Button variant="primary">Tambah Transaksi</Button>
         </Card.Body>
       </Card>
     </Container>
