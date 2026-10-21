@@ -18,6 +18,7 @@ function App() {
   return (
     <>
       {/* buat Routes */}
+      <AppNavigation />
       <Routes>
           {/* Tempat untuk komponen  */}
           {/* Route transaksiItem */}
