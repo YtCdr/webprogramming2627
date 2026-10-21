@@ -1,4 +1,7 @@
 // src/component/HeaderBanner.jsx
+
+import { Container } from 'react-bootstrap';
+
 function HeaderBanner() {
   return (
     <div className="p-5 mb-4 bg-light rounded-3 border">
@@ -12,3 +15,4 @@ function HeaderBanner() {
     </div>
   );
 }
+export default HeaderBanner;

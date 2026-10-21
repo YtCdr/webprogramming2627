@@ -21,3 +21,4 @@ function LayoutGrid() {
     </Container>
   );
 }
+export default LayoutGrid;
