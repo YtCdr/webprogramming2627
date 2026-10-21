@@ -21,13 +21,14 @@ function App() {
       <Routes>
           {/* Tempat untuk komponen  */}
           {/* Route transaksiItem */}
+          <Route path='/' element={ <WalletSummary />} />
           <Route path='/transaksi' element={ <TransaksiItem />} />
           {/* Route KartuRingaksan */}
           <Route path='/kartu' element={ <KartuRingkasan />} />
           {/* Route Badge */}
           <Route path='/badge' element={ <Badge />} />
           {/* Route WalletSummary */}
-          <Route path='/wallet' element={ <WalletSummary />} />
+          
           <Route path='/LayoutGrid' element={ <LayoutGrid/>  } />
           <Route path='/HeaderBanner' element={ <HeaderBanner/>  } />
           <Route path='/CardStatusDemo' element={ <CardStatusDemo/> } />
