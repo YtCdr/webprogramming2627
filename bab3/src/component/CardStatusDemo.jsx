@@ -1,5 +1,7 @@
-// src/component/CardStatusDemo.jsx
 import { Card, Button, Badge, Alert, Dropdown, ButtonGroup } from 'react-bootstrap';
+
+// Export default function CardStatusDemo()
+// Card.header Card.body Card.title Dropdown.menu
 
 export default function CardStatusDemo() {
   return (
@@ -8,22 +10,17 @@ export default function CardStatusDemo() {
         <span>Laporan Dompet</span>
         <Badge bg="success">Aktif</Badge>
       </Card.Header>
-
       <Card.Body>
         <Alert variant="info" className="py-2">
           Anggaran tersisa dalam batas aman.
         </Alert>
-
         <Card.Title className="fs-3">Rp 3.450.000</Card.Title>
-
         <Card.Text className="text-muted">
           Total pemasukan bulan ini telah melebihi target.
         </Card.Text>
-
         <Dropdown as={ButtonGroup}>
           <Button variant="primary">Ekspor Laporan</Button>
-
-          <Dropdown.Toggle split variant="primary"id="dropdown-split-basic" />
+          <Dropdown.Toggle split variant="primary" id="dropdown-split-basic" />
           <Dropdown.Menu>
             <Dropdown.Item href="#/pdf">Format PDF</Dropdown.Item>
             <Dropdown.Item href="#/excel">Format Excel</Dropdown.Item>
@@ -33,4 +30,3 @@ export default function CardStatusDemo() {
     </Card>
   );
 }
-// update 1
