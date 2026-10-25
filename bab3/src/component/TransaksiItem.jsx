@@ -1,9 +1,7 @@
-
 // App.jsx
 //  <TransaksiItem />
 //  <TransaksiItem />
 //  <TransaksiItem />
-
 export default function TransaksiItem() {
   return (
     <div style={{ backgroundColor: '#f8f9fa', padding: '15px', borderRadius: '8px' }}>
