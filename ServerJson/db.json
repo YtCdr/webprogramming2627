@@ -1,0 +1,16 @@
+{
+  "mahasiswa": [
+    {
+      "id": 1,
+      "nama": "Candra",
+      "nim": "12345",
+      "prodi": "Informatika"
+    },
+    {
+      "id": 2,
+      "nama": "Andi",
+      "nim": "12346",
+      "prodi": "Informatika"
+    }
+  ]
+}
