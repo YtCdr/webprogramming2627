@@ -14,6 +14,7 @@ import CardStatusDemo from './component/CardStatusDemo';
 import AppNavigation from './component/AppNavigation';
 import TransactionManager from './component/TransactionManager';
 
+
 function App() {
   return (
     <>

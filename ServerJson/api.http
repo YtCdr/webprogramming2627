@@ -1,7 +1,7 @@
-GET http://localhost:3000/transaksi
-
-GET http://localhost:3000/posts
-
 GET http://localhost:3000/comments
 
-GET http://localhost:3000/profile
+###
+GET http://localhost:3000/posts
+
+### 
+GET http://localhost:3000/transaksi
