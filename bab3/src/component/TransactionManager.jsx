@@ -12,11 +12,23 @@ function TransactionManager() {
 
   /*implementasi promise tradisional*/
   const ambilData = () => {
-    fetch('')
+    fetch('http://localhost:3000/transaksi')
+    .then ((response) => response.json())
+    .then ((data) => {
+      console.log('Data diterima :', data)
+      setTransaksi(data)
+    })
+    .catch ((error) => {
+      console.error('Terjadi kesalahan saat mengambil data', error);
+  });
 
-  }
+  };
 
-  useEffect() 
+  useEffect(
+    () => {
+      ambilData()
+    }, []
+  ) 
 
   return (
     <div className="container mt-4">
@@ -32,15 +44,32 @@ function TransactionManager() {
           <tr>
             <th>No</th>
             <th>Keterangan</th>
+            <th>Kategori</th>
             <th>Jumlah</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
+           {
+            transaksi.map(
+              (item, index) => (
+                <tr key={item.id || index}>
+                  <td>{index + 1}</td>
+                  <td>{item.keterangan}</td>
+                  <td>{item.kategori}</td>
+                  <td>{item.nominal}</td>
+                  </tr>
+              )
+            )
+           } 
+
+
+
+
+          {/*<tr>
             <td>1</td>
             <td>Belanja Bulanan</td>
             <td>Rp 500.000</td>
-          </tr>
+          </tr> */}
         </tbody>
       </Table>
 
