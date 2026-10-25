@@ -1,9 +1,10 @@
 // import {useState} from 'react'
 import { useState, useEffect } from 'react'
 import {Form, InputGroup, Modal, Button, Table, ProgressBar} from 'react-bootstrap'
-
+import AppNavigation from './AppNavigation'
 // const s = useState(false)
 
+  
 function TransactionManager() {
   const [show, setShow] = useState(false)
   const [transaksi, setTransaksi] = useState([])
@@ -24,12 +25,28 @@ function TransactionManager() {
       })
   }
 
+  const ambilDataAsync = async () =>{
+    try {
+      const response = await fetch('http://localhost:3000/transaksi');
+      if (!response.ok) {
+        throw new Error ('Gagal mengambil data dari server')
+      }
+      const data = await response.json()
+      console.log ('Data diterima:', data)
+      setTransaksi(data)
+    } catch (error) {
+      console.error('Error:', error.message)
+    }
+  }
+
   useEffect(() => {
     ambilData();
+    ambilDataAsync();
   }, []) 
 
   return (
     <div className="container mt-4">
+      <AppNavigation />
       <div className="d-flex justify-content-between align-items-center mb-3">
         <h3>Penggunaan Anggaran</h3>
         <Button variant="primary" onClick={handleShow}>Tambah Transaksi</Button>
