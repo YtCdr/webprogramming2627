@@ -1,5 +1,8 @@
+import "./App.css";
+// import transaksi Item
 import './App.css'
 import { Route, Routes } from 'react-router-dom';
+import { useState, useEffect } from 'react'
 // import transaksi Item 
 import TransaksiItem from './component/TransaksiItem';
 // import kartu Ringkasan
@@ -21,33 +24,31 @@ function App() {
       {/* buat Routes */}
       <AppNavigation />
       <Routes>
-        {/* Halaman utama */}
-        <Route path="/" element={<TransactionManager />} />
+          {/* Tambahkan Route Utama agar halaman tidak putih polos */}
+          <Route path='/' element={ <KartuRingkasan />} />
 
-        {/* Halaman TransactionManager */}
-        <Route path="/transaksi" element={<TransactionManager />} />
-
-        {/* Route TransaksiItem */}
-        <Route path="/transaksi-item" element={<TransaksiItem />} />
-
-        {/* Route KartuRingkasan */}
-        <Route path="/kartu" element={<KartuRingkasan />} />
-
-        {/* Route Badge */}
-        <Route path="/badge" element={<Badge />} />
-
-        {/* Route WalletSummary */}
-        <Route path="/wallet" element={<WalletSummary />} />
-
-        <Route path="/LayoutGrid" element={<LayoutGrid />} />
-        <Route path="/HeaderBanner" element={<HeaderBanner />} />
-        <Route path="/CardStatusDemo" element={<CardStatusDemo />} />
-        <Route path="/AppNavigation" element={<AppNavigation />} />
-        <Route path="/TransactionManager" element={<TransactionManager />} />
-      </Routes>
+      {/* Tempat untuk komponen  */}
+      {/* Route transaksiItem */}
+      {/* Route KartuRingaksan */}
+      {/* Route Badge */}
+      {/* Route WalletSummary */}
+          {/* Tempat untuk komponen  */}
+          {/* Route transaksiItem */}
+          <Route path='/transaksi' element={ <TransaksiItem />} />
+          {/* Route KartuRingaksan */}
+          <Route path='/kartu' element={ <KartuRingkasan />} />
+          {/* Route Badge */}
+          <Route path='/badge' element={ <Badge />} />
+          {/* Route WalletSummary */}
+          <Route path='/wallet' element={ <WalletSummary />} />
+          
+          <Route path='/LayoutGrid' element={ <LayoutGrid/>  } />
+          <Route path='/HeaderBanner' element={ <HeaderBanner/>  } />
+          <Route path='/CardStatusDemo' element={ <CardStatusDemo/> } />
+          <Route path='/AppNavigation' element={ <AppNavigation/> } />
+          <Route path='/TransactionManager' element={ <TransactionManager/> } />
+        </Routes>
     </>
   );
 }
-
-export default App
-/*update*/
+export default App;
