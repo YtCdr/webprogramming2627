@@ -1,7 +1,7 @@
 // src/component/LayoutGrid.jsx
 import { Container, Row, Col } from 'react-bootstrap';
 
-function LayoutGrid() {
+export default function LayoutGrid() {
   return (
     <Container className="my-4">
       <Row>
@@ -21,4 +21,3 @@ function LayoutGrid() {
     </Container>
   );
 }
-export default LayoutGrid;
