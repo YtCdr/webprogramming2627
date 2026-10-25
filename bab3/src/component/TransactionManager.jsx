@@ -1,5 +1,4 @@
-import {useState, useEffect} from 'react'
-import {useState} from 'react';
+import { useState, useEffect } from 'react'
 import {Form, InputGroup, Modal, Button, Table, ProgressBar} from 'react-bootstrap'
 
 // const s = useState(false)
@@ -14,22 +13,19 @@ function TransactionManager() {
   /*implementasi promise tradisional*/
   const ambilData = () => {
     fetch('http://localhost:3000/transaksi')
-    .then ((response) => response.json())
-    .then ((data) => {
-      console.log('Data diterima :', data)
-      setTransaksi(data)
-    })
-    .catch ((error) => {
-      console.error('Terjadi kesalahan saat mengambil data', error);
-  });
+      .then((response) => response.json())
+      .then((data) => {
+        console.log('Data diterima:', data)
+        setTransaksi(data)
+      })
+      .catch((error) => {
+        console.error('Terjadi kesalahan saat mengambil data', error)
+      })
+  }
 
-  };
-
-  useEffect(
-    () => {
-      ambilData()
-    }, []
-  ) 
+  useEffect(() => {
+    ambilData();
+  }, []) 
 
   return (
     <div className="container mt-4">
