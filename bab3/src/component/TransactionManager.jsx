@@ -104,5 +104,5 @@ function TransactionManager() {
     </div>
   )
 }
-
-export default TransactionManager
+export default TransactionManager;
+/*update*/
